@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Task Notes</title>
+  </head>
+  <body>
+    <header>
+      <h1>Task & Notes Manager</h1>
+    </header>
+
+    <main>
+      <!-- form tambah tugas -->
+      <section class="task-section">
+        <h2>Tambah Tugas</h2>
+        <form id="task-form">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Tambahkan Tugas.."
+            required
+          />
+          <button type="submit">Simpan</button>
+        </form>
+        <ul id="task-list"></ul>
+      </section>
+      <!-- Form Tambah Catatan -->
+      <section class="note-section">
+        <h2>Catatan</h2>
+        <form id="note-form">
+          <textarea
+            id="note-input"
+            placeholder="Tambahkan catatan..."
+            required
+          ></textarea>
+          <button type="submit">Simpan</button>
+        </form>
+        <ul id="note-list"></ul>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

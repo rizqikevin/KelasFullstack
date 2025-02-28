@@ -1,0 +1,15 @@
+div {
+    width: 300px;
+    border: 15px dashed black;
+    padding: 20px;
+    margin: 100px;
+}
+
+div.box1 {
+    width: 300px;
+    height: 100px;
+    background-color: red;
+    border : 15px dashed blue;
+    border-style: double;
+    border-left-style: ridge;
+}
