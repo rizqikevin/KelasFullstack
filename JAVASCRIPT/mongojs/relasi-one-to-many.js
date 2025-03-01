@@ -56,4 +56,11 @@ const addProduct = async (id) => {
     console.log(res);
 };
 
-addProduct("67c18cb2d148662ac72e0acd");
+// addProduct("67c18cb2d148662ac72e0acd");
+
+//menampilkan data dari turunan one to many
+Farm.findOne({ name: "Kebun Rizqi" })
+  .populate("products")
+  .then((farm) => {
+    console.log(farm);
+  });

@@ -122,6 +122,20 @@ const capsExpression = expression.map(function (express) {
   return express.toUpperCase();
 });
 
+function mapMethod(teks1,teks2,teks3,...teks4){
+  const inputan = [teks1,teks2,teks3,...teks4]
+  return inputan.map((input) => {
+    const res = input.toUpperCase();
+    return res;
+  });
+}
+
+mapMethod('df','df','afd');
+
+
+
+console.log(mapMethod);
+
 const angka = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 const angkaDouble = angka.map(function (num) {
   const double = num * 2;
@@ -393,16 +407,16 @@ function kali(a, b){
     return total;
 }
 
-let lemparDadu = Math.floor(Math.random()* 6)  + 1;
+// let lemparDadu = Math.floor(Math.random()* 6)  + 1;
 
-console.log(lemparDadu);
+// console.log(lemparDadu);
 
-let input1 = parseInt(prompt('Masukkan Angka Tebakan: '));
+// let input1 = parseInt(prompt('Masukkan Angka Tebakan: '));
 
-while (input1 !== lemparDadu) {
-    input1 = parseInt(prompt('Tebakan Salah. Masukkan Angka Tebakan: '));
-}
-alert('Tebakan Benar!');
+// while (input1 !== lemparDadu) {
+//     input1 = parseInt(prompt('Tebakan Salah. Masukkan Angka Tebakan: '));
+// }
+// alert('Tebakan Benar!');
 
  const studentScore = {
     'Ahmad': 80,

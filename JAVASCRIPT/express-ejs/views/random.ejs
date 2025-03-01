@@ -1,0 +1,9 @@
+<%- include('partials/header') %> 
+<%- include('partials/navbar') %>
+
+<h1>ini adalah angka nomor : <%= random %></h1>
+<% if (random % 2 === 0) { %>
+<h3>ini adalah angka genap</h3>
+<%} else {%>
+<h3>ini adalah angka ganjil</h3>
+<%}%> <%- include('partials/footer') %>
